@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.HeaderParentActivity">
+
+    <ImageView
+        android:id="@+id/logo_banner"
+        android:layout_width="414dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/menu_more_logo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-3dp" />
+
+
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/logo_banner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logo_banner"
+        app:layout_constraintTop_toBottomOf="@+id/logo_banner"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/line_start"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/title_textView"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title_textView"
+        app:layout_constraintBottom_toBottomOf="@+id/title_textView" />
+
+
+    <View
+        android:id="@+id/line_end"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title_textView"
+        app:layout_constraintTop_toTopOf="@+id/title_textView"
+        app:layout_constraintBottom_toBottomOf="@+id/title_textView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
