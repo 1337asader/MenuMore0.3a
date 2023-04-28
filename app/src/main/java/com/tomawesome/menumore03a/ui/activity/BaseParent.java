@@ -12,5 +12,7 @@ public class BaseParent extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base_parent);
+
+        // trying agin to show updated work
     }
 }
